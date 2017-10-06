@@ -176,7 +176,7 @@ namespace BananaBotProtector
 
         private void SetTimerBtn_Click(object sender, EventArgs e)
         {
-            UpdateTimer.Interval = Convert.ToInt32(TimerNum.Value) * 1000;
+            UpdateTimer.Interval = Convert.ToInt32(Convert.ToDouble(TimerNum.Value) * 1000);
         }
 
 
@@ -341,42 +341,6 @@ namespace BananaBotProtector
 
                     }
                     break;
-                //case MyProtocolType.Http:
-                //    {
-                //        TcpPacket Tcppac = (TcpPacket)packet;
-                //        CurNode.Text = "Transmission Control Protocol " + Tcppac.Description();
-                //        CurNode.Nodes.Add("Порт отправителя: " + Tcppac.SourcePort.ToString());
-                //        CurNode.Nodes.Add("Порт получателя: " + Tcppac.DestPort.ToString());
-                //        CurNode.Nodes.Add("Sequence Number: " + Tcppac.SequenceNumber.ToString());
-                //        CurNode.Nodes.Add("AcknoledgementNumber: " + Tcppac.AcknowledgementNumber.ToString());
-                //        CurNode.Nodes.Add("Длина заголовка: " + Tcppac.HeaderLength.ToString() + " ( " + Tcppac.HeaderLength * 4 + " байт)");
-                //        CurNode.Nodes.Add("Флаги: " + getString(Tcppac.Flags));
-                //        CurNode.Nodes.Add("Размер окна : " + Tcppac.WindowSize.ToString());
-                //        CurNode.Nodes.Add("Чексумма: " + Tcppac.CheckSum.ToString());
-                //        CurNode.Nodes.Add("Указатель важности: " + Tcppac.UrgentPointer.ToString());
-                //        if (Tcppac.HeaderLength > 5)
-                //        {
-                //            TreeNode Opt = new TreeNode("Опции");
-                //            Opt.Nodes.Add(getArrayBits(Tcppac.Options));
-                //        }
-                //        TreeNode RawHeader = new TreeNode("Байты заголовка");
-                //        TreeNode RawData = new TreeNode("Байты нагрузки");
-                //        RawHeader.Nodes.Add(getArrayBits(Tcppac.HeaderBytes));
-                //        RawData.Nodes.Add(getArrayBits(Tcppac.ChildBytes));
-                //        CurNode.Nodes.Add(RawHeader);
-                //        CurNode.Nodes.Add(RawData);
-                //        if (Tcppac.HttpInside)
-                //        {
-                //            TreeNode Http = new TreeNode("Hypertext Transport Protocol");
-                //            string text = Encoding.ASCII.GetString(Tcppac.ChildBytes);
-                //            TreeNode HtContent = new TreeNode();
-                //            Http.Nodes.Add(HtContent);
-                //            CurNode.Nodes.Add(Http);
-                //            text.Replace(System.Environment.NewLine, string.Empty);
-                //            HtContent.Text = text;
-                //        }
-                //    }
-                //    break;
                 default: break;
             }
             return CurNode;
