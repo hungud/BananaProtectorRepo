@@ -20,11 +20,11 @@
             base.Dispose(disposing);
         }
 
-        #region Код, автоматически созданный конструктором форм Windows
+        #region Code, автоматически созданный конструктором форм Windows
 
         /// <summary>
         /// Требуемый метод для поддержки конструктора — не изменяйте 
-        /// содержимое этого метода с помощью редактора кода.
+        /// содержимое этого метода с помощью редактора Codeа.
         /// </summary>
         private void InitializeComponent()
         {
@@ -75,7 +75,7 @@
             this.ControlPanelBox.Size = new System.Drawing.Size(315, 777);
             this.ControlPanelBox.TabIndex = 0;
             this.ControlPanelBox.TabStop = false;
-            this.ControlPanelBox.Text = "Панель управления";
+            this.ControlPanelBox.Text = "Control Panel";
             // 
             // CounterGrid
             // 
@@ -98,13 +98,13 @@
             // 
             // address
             // 
-            this.address.HeaderText = "Адрес";
+            this.address.HeaderText = "Address";
             this.address.Name = "address";
             this.address.ReadOnly = true;
             // 
             // packetspert
             // 
-            this.packetspert.HeaderText = "Пакетов за t";
+            this.packetspert.HeaderText = "Packages for t";
             this.packetspert.Name = "packetspert";
             this.packetspert.ReadOnly = true;
             // 
@@ -126,7 +126,7 @@
             this.groupBox1.Size = new System.Drawing.Size(303, 322);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Сниффер";
+            this.groupBox1.Text = "Sniffer";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // SetTimerBtn
@@ -169,7 +169,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(135, 13);
             this.label3.TabIndex = 11;
-            this.label3.Text = "Период обновления (t) (с)";
+            this.label3.Text = "Update period (t) (с)";
             // 
             // EnableBtn
             // 
@@ -178,7 +178,7 @@
             this.EnableBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.EnableBtn.Size = new System.Drawing.Size(141, 23);
             this.EnableBtn.TabIndex = 7;
-            this.EnableBtn.Text = "Старт";
+            this.EnableBtn.Text = "Start";
             this.EnableBtn.UseVisualStyleBackColor = true;
             this.EnableBtn.Click += new System.EventHandler(this.EnableBtn_Click);
             // 
@@ -191,7 +191,7 @@
             this.Scroller.Name = "Scroller";
             this.Scroller.Size = new System.Drawing.Size(179, 17);
             this.Scroller.TabIndex = 10;
-            this.Scroller.Text = "Перейти к последнему пакету";
+            this.Scroller.Text = "View the latest package";
             this.Scroller.UseVisualStyleBackColor = true;
             this.Scroller.CheckedChanged += new System.EventHandler(this.Scroll_CheckedChanged);
             // 
@@ -201,7 +201,7 @@
             this.DisableBtn.Name = "DisableBtn";
             this.DisableBtn.Size = new System.Drawing.Size(147, 23);
             this.DisableBtn.TabIndex = 8;
-            this.DisableBtn.Text = "Стоп";
+            this.DisableBtn.Text = "Stop";
             this.DisableBtn.UseVisualStyleBackColor = true;
             this.DisableBtn.Click += new System.EventHandler(this.DisableBtn_Click);
             // 
@@ -219,7 +219,7 @@
             this.ChangeAdapterBtn.Name = "ChangeAdapterBtn";
             this.ChangeAdapterBtn.Size = new System.Drawing.Size(104, 23);
             this.ChangeAdapterBtn.TabIndex = 4;
-            this.ChangeAdapterBtn.Text = "Сменить";
+            this.ChangeAdapterBtn.Text = "Change";
             this.ChangeAdapterBtn.UseVisualStyleBackColor = true;
             this.ChangeAdapterBtn.Click += new System.EventHandler(this.ChangeAdapterBtn_Click);
             // 
@@ -230,7 +230,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Адаптер:";
+            this.label1.Text = "Adapter:";
             // 
             // TotalSentLab
             // 
@@ -248,7 +248,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Принято пакетов";
+            this.label2.Text = "Packets received";
             // 
             // ManageFiltersBtn
             // 
@@ -256,7 +256,7 @@
             this.ManageFiltersBtn.Name = "ManageFiltersBtn";
             this.ManageFiltersBtn.Size = new System.Drawing.Size(165, 23);
             this.ManageFiltersBtn.TabIndex = 1;
-            this.ManageFiltersBtn.Text = "Управление фильтрами";
+            this.ManageFiltersBtn.Text = "Manage filters";
             this.ManageFiltersBtn.UseVisualStyleBackColor = true;
             // 
             // packetStream
@@ -294,22 +294,22 @@
             // 
             // nubmer
             // 
-            this.nubmer.Text = "Номер";
+            this.nubmer.Text = "Room";
             this.nubmer.Width = 98;
             // 
             // time
             // 
-            this.time.Text = "Время";
+            this.time.Text = "Time";
             this.time.Width = 108;
             // 
             // sender
             // 
-            this.sender.Text = "Отправитель";
+            this.sender.Text = "Sender";
             this.sender.Width = 111;
             // 
             // receiver
             // 
-            this.receiver.Text = "Получатель";
+            this.receiver.Text = "Receiver";
             this.receiver.Width = 117;
             // 
             // ttl
@@ -319,17 +319,17 @@
             // 
             // type
             // 
-            this.type.Text = "Протокол";
+            this.type.Text = "Protocol";
             this.type.Width = 65;
             // 
             // size
             // 
-            this.size.Text = "Размер";
+            this.size.Text = "Size";
             this.size.Width = 66;
             // 
             // description
             // 
-            this.description.Text = "Описание";
+            this.description.Text = "Description";
             this.description.Width = 485;
             // 
             // PacketInfoView
@@ -347,7 +347,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 13);
             this.label4.TabIndex = 13;
-            this.label4.Text = "Монитор HTTP ";
+            this.label4.Text = "Monitor HTTP ";
             // 
             // Form1
             // 

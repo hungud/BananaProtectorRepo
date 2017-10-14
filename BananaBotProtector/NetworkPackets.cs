@@ -621,20 +621,20 @@ namespace BananaBotProtector
         }
         public override string Description()
         {
-            string res = "Тип: " + Enum.GetName(typeof(Type), type);
+            string res = "A type: " + Enum.GetName(typeof(Type), type);
             switch (data[0])
             {
                 case (byte)Type.DestinationUnreachable:
-                    res += " Код: " + Enum.GetName(typeof(DestinationUnreachableCodes), Code);
+                    res += " Code: " + Enum.GetName(typeof(DestinationUnreachableCodes), Code);
                     break;
                 case (byte)Type.RedirectMessage:
-                    res += " Код: " + Enum.GetName(typeof(RedirectMessageCodes), Code);
+                    res += " Code: " + Enum.GetName(typeof(RedirectMessageCodes), Code);
                     break;
                 case (byte)Type.TimeExceeded:
-                    res += " Код: " + Enum.GetName(typeof(TimeExceededCodes), Code);
+                    res += " Code: " + Enum.GetName(typeof(TimeExceededCodes), Code);
                     break;
                 case (byte)Type.BadIpHeader:
-                    res += " Код: " + Enum.GetName(typeof(BadIpHeaderCodes), Code);
+                    res += " Code: " + Enum.GetName(typeof(BadIpHeaderCodes), Code);
                     break;
             }
             return res;

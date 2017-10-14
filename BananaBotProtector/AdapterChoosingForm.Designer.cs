@@ -69,7 +69,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 13);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Текущий адаптер";
+            this.label1.Text = "Current adapter";
             // 
             // CurAdapterLab
             // 
@@ -85,7 +85,7 @@
             this.SetBtn.Name = "SetBtn";
             this.SetBtn.Size = new System.Drawing.Size(75, 23);
             this.SetBtn.TabIndex = 5;
-            this.SetBtn.Text = "Применить";
+            this.SetBtn.Text = "Apply";
             this.SetBtn.UseVisualStyleBackColor = true;
             this.SetBtn.Click += new System.EventHandler(this.SetBtn_Click);
             // 
@@ -95,7 +95,7 @@
             this.CancelBtn.Name = "CancelBtn";
             this.CancelBtn.Size = new System.Drawing.Size(75, 23);
             this.CancelBtn.TabIndex = 6;
-            this.CancelBtn.Text = "Отменить";
+            this.CancelBtn.Text = "Undo";
             this.CancelBtn.UseVisualStyleBackColor = true;
             this.CancelBtn.Click += new System.EventHandler(this.CancelBtn_Click);
             // 
@@ -112,7 +112,7 @@
             this.Controls.Add(this.IpLab);
             this.Controls.Add(this.AdapterBox);
             this.Name = "AdapterChoosingForm";
-            this.Text = "Выберите адаптер";
+            this.Text = "Select an adapter";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -221,7 +221,7 @@ namespace BananaBotProtector
                         byte Code = Icmppac.Code;
                         CurNode.Text = "Internet Control Message Protocol " + Icmppac.Description();
                         CurNode.Nodes.Add("Тип: " + Enum.GetName(typeof(IcmpPacket.Type), type));
-                        CurNode.Nodes.Add("Код: " + Code);
+                        CurNode.Nodes.Add("Code: " + Code);
                         CurNode.Nodes.Add("Чексумма: " + Icmppac.Checksum.ToString());
                         switch (type)
                         {
@@ -317,15 +317,15 @@ namespace BananaBotProtector
                     {
                         TcpPacket Tcppac = (TcpPacket)packet;
                         CurNode.Text = "Transmission Control Protocol " + Tcppac.Description();
-                        CurNode.Nodes.Add("Порт отправителя: " + Tcppac.SourcePort.ToString());
-                        CurNode.Nodes.Add("Порт получателя: " + Tcppac.DestPort.ToString());
+                        CurNode.Nodes.Add("Sender port: " + Tcppac.SourcePort.ToString());
+                        CurNode.Nodes.Add("Recipient port: " + Tcppac.DestPort.ToString());
                         CurNode.Nodes.Add("Sequence Number: " + Tcppac.SequenceNumber.ToString());
-                        CurNode.Nodes.Add("AcknoledgementNumber: " + Tcppac.AcknowledgementNumber.ToString());
-                        CurNode.Nodes.Add("Длина заголовка: " + Tcppac.HeaderLength.ToString() + " ( " + Tcppac.HeaderLength * 4 + " байт)");
-                        CurNode.Nodes.Add("Флаги: " + getString(Tcppac.Flags));
-                        CurNode.Nodes.Add("Размер окна : " + Tcppac.WindowSize.ToString());
-                        CurNode.Nodes.Add("Чексумма: " + Tcppac.CheckSum.ToString());
-                        CurNode.Nodes.Add("Указатель важности: " + Tcppac.UrgentPointer.ToString());
+                        CurNode.Nodes.Add("AcknowledgementNumber: " + Tcppac.AcknowledgementNumber.ToString());
+                        CurNode.Nodes.Add("Headline length: " + Tcppac.HeaderLength.ToString() + " ( " + Tcppac.HeaderLength * 4 + " байт)");
+                        CurNode.Nodes.Add("Flags: " + getString(Tcppac.Flags));
+                        CurNode.Nodes.Add("Window size : " + Tcppac.WindowSize.ToString());
+                        CurNode.Nodes.Add("Check Sum: " + Tcppac.CheckSum.ToString());
+                        CurNode.Nodes.Add("Index of importance: " + Tcppac.UrgentPointer.ToString());
                         if (Tcppac.HeaderLength > 5)
                         {
                             TreeNode Opt = new TreeNode("Опции");
